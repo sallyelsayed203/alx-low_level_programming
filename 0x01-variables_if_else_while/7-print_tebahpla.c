@@ -8,10 +8,13 @@
 */
 int main(void)
 {
-	char low;
+	int n = 122;
 
-	for (low = 'z'; low >= 'a'; low--)
-		putchar(low);
-		putchar('\n');
+	while (n >= 97)
+	{
+		putchar(n);
+		n--;
+	}
+	putchar('\n');
 	return (0);
 }
