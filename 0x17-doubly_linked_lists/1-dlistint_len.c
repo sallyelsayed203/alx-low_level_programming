@@ -7,9 +7,13 @@
  *     */
 size_t dlistint_len(const dlistint_t *h)
 {
-	size_t i;
+	size_t count = 0;
 
-	for (i = 0; h != NULL; i++)
+	/* while we have a pointer to the list */
+	while (h != NULL)
+	{
+		count++;
 		h = h->next;
-	return (i);
+	}
+	return (count);
 }
